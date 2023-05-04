@@ -1,0 +1,3 @@
+FROM nginx as myproxy
+COPY nginx_proxy/proxy2myfcgi.conf /etc/nginx/conf.d/proxy2myfcgi.conf
+CMD nginx -g "daemon off;"
